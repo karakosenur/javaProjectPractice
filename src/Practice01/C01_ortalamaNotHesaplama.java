@@ -5,12 +5,15 @@ import java.util.Scanner;
 public class C01_ortalamaNotHesaplama {
     public static void main(String[] args) {
 
-        double mat, fizik, kimya, tarih, muzik;
+        double mat, fizik, kimya, tarih, muzik, turkce;
 
         Scanner scan=new Scanner(System.in);
 
         System.out.println("Matematik notunuzu giriniz : ");
         mat=scan.nextDouble();
+
+        System.out.println("Turkce notunuzu giriniz : ");
+        turkce=scan.nextDouble();
 
         System.out.println("Fizik notunuzu giriniz : ");
         fizik=scan.nextDouble();
@@ -24,15 +27,10 @@ public class C01_ortalamaNotHesaplama {
         System.out.println("Tarih notunuzu giriniz : ");
         tarih=scan.nextDouble();
 
-        /*
-        echo "# javaProjectPractice" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/karakosenur/javaProjectPractice.git
-git push -u origin main
-         */
+       double toplam=(mat + fizik + kimya + muzik + tarih+ turkce);
+       double ortalama=(toplam/6);
+
+        System.out.println("Ortalama notunuz : " + ortalama);
 
 
 
