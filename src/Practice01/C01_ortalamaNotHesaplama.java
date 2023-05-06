@@ -4,6 +4,11 @@ import java.util.Scanner;
 
 public class C01_ortalamaNotHesaplama {
     public static void main(String[] args) {
+        /*
+        Not Ortalaması Hesaplayan Program
+        Java ile Matematik, Fizik, Kimya, Türkçe, Tarih, Müzik derslerinin
+        sınav puanlarını kullanıcıdan alan ve ortalamalarını hesaplayıp ekrana bastırılan programı yazın.
+         */
 
         double mat, fizik, kimya, tarih, muzik, turkce;
 
