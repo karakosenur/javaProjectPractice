@@ -18,14 +18,14 @@ public class C12_havaSicakliginaGoreEtkinlikOnerme {
             System.out.println("Hava sicakligini giriniz : ");
 
             sicaklik = scan.nextInt();
-            if (sicaklik >= 25){
-                System.out.println("Yüzmeye gidebilirsiniz");
-            }else if(sicaklik >= 10){
-                System.out.println("Piknige gidebilirsiniz");
-            }else if(sicaklik>=5){
-                System.out.println("Sinemaya gidebilirsiniz");
-            }else if(sicaklik>=0){
+            if (sicaklik <= 5){
                 System.out.println("Kayak yapabilirsiniz");
+            }else if(sicaklik > 5 && sicaklik <=15){
+                System.out.println("Sinemaya gidebilirsiniz");
+            }else if(sicaklik > 15 && sicaklik <=25){
+                System.out.println("Pikniğe gidebilirsiniz");
+            }else if(sicaklik> 25){
+                System.out.println("Yüzmeye gidebilirsiniz");
             }
 
     }
