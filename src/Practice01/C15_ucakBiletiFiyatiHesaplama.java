@@ -24,10 +24,8 @@ public class C15_ucakBiletiFiyatiHesaplama {
 
         System.out.println("Lutfen gideceginiz mesafeyi km cinsinden giriniz");
         int km=scan.nextInt();
-
         System.out.println("Lutfen yasinizi giriniz");
         int yas=scan.nextInt();
-
         System.out.println("Lutfen yolculuk tipini giriniz. " +
                 "\n1 => Tek Yön , 2 => Gidiş Dönüş ");
         int yolTip=scan.nextInt();
@@ -36,8 +34,6 @@ public class C15_ucakBiletiFiyatiHesaplama {
         double onInd=biletFiyati*0.10;
         double otuzInd=biletFiyati*0.30;
         double yirmiInd=biletFiyati*0.20;
-
-
         if (km>0){
             if (yas<=12 && yas>0 && yolTip==2 ){
                 System.out.println((biletFiyati-elliInd)-((biletFiyati-elliInd)*0.20));
